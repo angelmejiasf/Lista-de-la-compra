@@ -1,0 +1,162 @@
+@font-face {
+    font-family: opensans;
+    src: url("../fuentes/OpenSansCondensed-Light.ttf")
+}
+
+@font-face {
+    font-family: yanone;
+    src: url("../fuentes/YanoneKaffeesatz-ExtraLight.ttf")
+}
+
+
+/* Clase para quitar y poner los mensajes de error */
+.borrar{
+    display:none;
+}
+
+body {
+    font-family: opensans;
+    width: 1000px;
+    margin: 0 auto;
+    border: 0.01rem solid rgb(218, 216, 216);
+    padding: 0 40px;
+    font-variant: small-caps;
+}
+
+.header__title {
+    font-family: opensans;
+    font-weight: normal;
+    text-align: center;
+    font-size: 5rem;
+    color: gray;
+    margin-top: 1rem;
+}
+
+.main {
+    text-align: center;
+}
+
+.total{
+    color:rgb(236, 102, 6);
+    text-align: right;
+    font-size: 2.5rem;
+    padding-right: 2rem;
+    border-bottom: 0.01rem solid rgb(218, 216, 216);
+    padding-bottom: 1rem;
+}
+
+.form{
+    display: flex;
+}
+
+.formcontainerinput{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form__error{
+    color:rgba(244, 40, 40, 0.822);
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: opensans;
+    margin:0;
+    padding:0
+
+}
+
+.form__nuevoalimento {
+    width: 300px;
+    height: 45px;
+    border: 1px solid rgb(218, 216, 216);
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.09rem;
+    padding-left: 1.2rem;
+    margin-right: 5rem;
+}
+
+.button {
+    width: 220px;
+    height: 50px;
+    border: 1px solid rgb(218, 216, 216);
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.09rem;
+    padding: 0.5rem;
+    margin-right: 5rem;
+    color: white;
+    cursor:pointer;
+}
+
+.form__btnaniadir {
+    background-color: #50b1c2;
+}
+
+.form__btncomprar {
+    background-color: #73AAFF;
+}
+
+
+/* LISTA */
+
+.list {
+    max-width: 700px;
+    margin: 4em auto;
+    font-weight: bold;
+    color: rgba(73, 75, 207, 0.882);
+}
+
+.listitem {
+    display:flex;
+    justify-content: space-evenly;
+    border-radius: 0.4rem;
+    margin-bottom: 0.25rem;
+    list-style-type: none;
+    border: 1px solid rgb(218, 216, 216);
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.listitem__name {
+    margin-right: 0.5rem;
+    width: 225px;
+    text-align: left;
+}
+
+.listitem__amount {
+    margin-left: 0.7rem;
+    width: 100px;
+}
+
+.listbtn__decrease,
+.listbtn__add {
+    margin: 0 0.1rem 0 4rem;
+    padding: 0 0.7rem;
+    font-size: 2rem;
+    border: none;
+    background-color: rgba(0, 98, 255, 0.838);
+    color: whitesmoke;
+    border-radius: 0.25rem;
+    cursor:pointer;
+}
+
+.listbtn__decrease {
+    margin: 0 0.1rem;
+    padding: 0.15rem 0.9rem;
+}
+
+.listbtn__delete {
+    cursor:pointer;
+    margin: 0 0.1rem 0.25rem 4rem;
+    padding: 0.1rem 0.85rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgba(255, 0, 0, 0.823);
+    color: whitesmoke;
+    border-radius: 0.25rem;
+}

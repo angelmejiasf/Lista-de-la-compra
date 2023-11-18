@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>Lista de la compra</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">
+                Lista de la Compra
+            </h1>
+        </header>
+
+        <main class="main">
+            <!-- Precio -->
+            <h2 class="total">Total Compra <span id="total">0</span>€ </h2>
+
+            <!-- Edicion Lista -->
+            <section class="form">
+                <div class="formcontainerinput">
+
+                    <input type="text" class="form__nuevoalimento" id="nuevoalimento" placeholder="Introduce Alimento"
+                        maxlength="25">
+                    <p id="error" class="form__error"></p>
+                </div>
+                <button id="btnaniadir" class="button form__btnaniadir">Añadir Alimento</button>
+                <button id="btncomprar" class="button form__btncomprar">Realizar Compra</button>
+            </section>
+
+            <!-- Mostrar Lista -->
+            <section>
+                <ul class="list" id="list">
+
+
+
+                </ul>
+            </section>
+
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
